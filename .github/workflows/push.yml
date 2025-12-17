@@ -1,18 +1,18 @@
 
-nombre: Build and Deploy
-donde: [push]
-permisiones:
-  contentos: write
+name: Build and Deploy
+on: [push]
+permissions:
+  contents: write
 jobs:
   build-and-deploy:
-    concurrency: ci-${{github.ref}}
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        usos: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Deploy
-        usos: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: . # The folder the action should deploy.
