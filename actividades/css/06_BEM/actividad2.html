@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --tamaño-usuario: 25px;
+            --color-respuesta: #0000FF;
+            --color-usuario: #FFC0CB;
+        }
+        .comentarios{
+            .comentario{
+                .comentario__username{
+                    font-size: var(--tamaño-usuario);
+                    color: var(--color-usuario);
+                }
+                .comentario__respuesta{
+                    color: var(--color-respuesta);
+                }
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header"><h1>Sistema de comentarios</h1></header>
+    <section class="comentarios">
+        <fieldset class="comentario">
+            <div class="comentario__username">
+                <strong>jBarrero</strong>
+            </div>
+            <div class="comentario__texto"> 
+                Me parece una verguenza que Tebas ponga el futbol tan caro. Que dimita ya.
+            </div>
+        </fieldset>
+        <fieldset class="comentario">
+            <div class="comentario__username">
+                <strong>rPinto</strong>
+            </div>
+            <div class="comentario__respuesta">
+                Opino lo mismo que tu, en China la liga española la ven en abierto, tendremos que mudarnos
+            </div>    
+        </fieldset>
+    </section>
+    <section class="comentar">
+        <fieldset class="comentar__form">
+            <label for="cuadro_comentar" class="comentar__enunciado">
+                Escribe aqui tu comentario
+                <input type="text" class="comentario__caja" id="cuadro_comentar">
+            </label>
+                <button type="submit" class="enviar__comentario--boton">Comentar</button>
+        </fieldset>
+
+    </section>
+</body>
+</html>
+
