@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .avatar{
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+        .nombreusuario{
+            display: flex;
+            align-items: center;
+            gap:10px;
+            padding-bottom: 10px;
+        }
+        .mensaje_texto{
+            background-color: lightblue;
+            margin-bottom: 10px;
+            .mensaje__contenido{
+                margin:0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CHAT</h1>
+    <div class="mensaje">
+        <header class="nombreusuario">
+            <h2>Messi</h2>
+            <img src="img/messi.jpg" class="avatar" alt="ImagenUsuario">
+        </header>
+        <div class="mensaje_texto">
+            <p class="mensaje__contenido">
+                Hola, como estas?
+            </p>
+        </div>
+    </div>
+
+    <div class="mensaje">
+        <header class="nombreusuario">
+            <h2>CR7</h2>
+            <img src="img/cristiano.png" class="avatar" alt="ImagenUsuario">
+        </header>
+        <div class="mensaje_texto">
+            <p class="mensaje__contenido">
+                Muy bien, me he clasificado para la final de la Champions
+            </p>
+        </div>
+    </div>
+    <div class="mensaje">
+        <header class="nombreusuario">
+            <h2>Messi</h2>
+            <img src="img/messi.jpg" class="avatar" alt="ImagenUsuario">
+        </header>
+        <div class="mensaje_texto">
+            <p class="mensaje__contenido">
+                Yo tambien, nos veremos alli entonces.
+            </p>
+        </div>
+    </div
+    <div class="mensaje">
+        <header class="nombreusuario">
+            <h2>CR7</h2>
+            <img src="img/cristiano.png" class="avatar" alt="ImagenUsuario">
+        </header>
+        <div class="mensaje_texto">
+            <p class="mensaje__contenido">
+                Si, atate bien los zapatos que luego se te caen las botas.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
