@@ -6,72 +6,122 @@
     <title>Document</title>
 
     <style>
-        .avatar{
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            object-fit: cover;
+
+        :root{
+            --margen-chat: 150px;
+            --tamaño-avatar: 40px;
+            --bordes-mensajes:20px
         }
-        .nombreusuario{
+
+        .titulo{
+            text-align: center;
+            font-size: 3rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+        .chat{
+            background-color: aquamarine;
             display: flex;
-            align-items: center;
-            gap:10px;
-            padding-bottom: 10px;
+            flex-direction: column; /* Columnas */
+            border-radius: var(--bordes-mensajes);
+
         }
-        .mensaje_texto{
-            background-color: lightblue;
-            margin-bottom: 10px;
-            .mensaje__contenido{
-                margin:0;
-            }
+
+        .avatar{
+            width: var(--tamaño-avatar);
+            height: var(--tamaño-avatar);
+            max-width: 100%; /* La imagen nunca sera mas ancha que la caja donde la metas.*/
+            border-radius: 50%;
+            order: 0;
         }
+        .mensaje_messi{
+            padding: 10px;
+            border-radius: var(--bordes-mensajes);
+            background-color: gray;
+            margin-right: auto;
+            margin-left: 100px;
+            max-width: 200px;
+            align-self: flex-start; /* Alineado a la izquierda */
+            
+        }
+        .mensaje_cristiano{ 
+            border-radius: var(--bordes-mensajes);
+            padding: 10px; 
+            background-color: indianred;
+            margin-left: auto;
+            margin-right: 100px;
+            max-width: 400px; /* Límite para que en pantallas gigantes no se estire al infinito */
+            display: flex;
+            flex-direction: column;
+            align-self: flex-end; /* Alineado a la derecha */
+           .usuario{
+               align-self: flex-end;
+           }    
+        }
+
+        .nombre__usuario{
+            font-size:1.5rem;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;            
+        }
+        .mensaje__contenido{
+            font-size: 1rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+
+       
+        
+
+
     </style>
 </head>
-<body>
-    <h1>CHAT</h1>
-    <div class="mensaje">
-        <header class="nombreusuario">
-            <h2>Messi</h2>
-            <img src="img/messi.jpg" class="avatar" alt="ImagenUsuario">
-        </header>
-        <div class="mensaje_texto">
-            <p class="mensaje__contenido">
-                Hola, como estas?
-            </p>
+    <body>
+    <div class="chat">
+        <h1 class="titulo">CHAT</h1>
+        <div class="mensaje_messi">
+            <header class="usuario">
+                <span class="nombre__usuario">Messi</span>
+                <img src="img/messi.jpg" class="avatar" alt="ImagenUsuario">
+            </header>
+            <div class="mensaje_texto">
+                <p class="mensaje__contenido">
+                    Hola, como estas?
+                </p>
+            </div>
         </div>
-    </div>
 
-    <div class="mensaje">
-        <header class="nombreusuario">
-            <h2>CR7</h2>
-            <img src="img/cristiano.png" class="avatar" alt="ImagenUsuario">
-        </header>
-        <div class="mensaje_texto">
-            <p class="mensaje__contenido">
-                Muy bien, me he clasificado para la final de la Champions
-            </p>
+        <div class="mensaje_cristiano">
+            <header class="usuario">
+                <span class="nombre__usuario">CR7</span>
+                <img src="img/cristiano.png" class="avatar" alt="ImagenUsuario">
+            </header>
+            <div class="mensaje_texto">
+                <p class="mensaje__contenido">
+                    Muy bien, me he clasificado para la final de la Champions
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="mensaje">
-        <header class="nombreusuario">
-            <h2>Messi</h2>
-            <img src="img/messi.jpg" class="avatar" alt="ImagenUsuario">
-        </header>
-        <div class="mensaje_texto">
-            <p class="mensaje__contenido">
-                Yo tambien, nos veremos alli entonces.
-            </p>
+        <div class="mensaje_messi">
+            <header class="usuario">
+                <span class="nombre__usuario">Messi</span>
+                <img src="img/messi.jpg" class="avatar" alt="ImagenUsuario">
+            </header>
+            <div class="mensaje_texto">
+                <p class="mensaje__contenido">
+                    Yo tambien, nos veremos alli entonces.
+                </p>
+            </div>
         </div>
-    </div
-    <div class="mensaje">
-        <header class="nombreusuario">
-            <h2>CR7</h2>
-            <img src="img/cristiano.png" class="avatar" alt="ImagenUsuario">
-        </header>
-        <div class="mensaje_texto">
-            <p class="mensaje__contenido">
-                Si, atate bien los zapatos que luego se te caen las botas.
-            </p>
+        <div class="mensaje_cristiano">
+            <header class="usuario">
+                <span class="nombre__usuario">CR7</span>
+                <img src="img/cristiano.png" class="avatar" alt="ImagenUsuario">
+            </header>
+            <div class="mensaje_texto">
+                <p class="mensaje__contenido">
+                    Si, atate bien los zapatos que luego se te caen las botas.
+                </p>
+            </div>
         </div>
     </div>
 </body>
