@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .landing{
+            display: flex;
+            flex-direction: column;
+            padding: 5rem;
+        }
+        .banner-aviso{
+            background-color: #F1F1F1;
+        }
+        .banner-aviso__texto{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.2rem;
+            text-align: center;
+            .banner-aviso__subrayado{
+                border-bottom: black 1px solid;
+            }
+        }
+        .curso-info{
+            margin-top: 50px;
+            width: 55%;
+            .curso-info__titulo{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 3rem;
+            }
+            .curso-info__descripcion{
+                font-size: 0.7rem;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                line-height: 1.5;
+            }
+        }
+        .curso-info__boton{
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            margin-top: 2.5rem;
+            border: 1px solid black;
+            padding: 1.2rem;
+            border-radius: 100px;
+
+        }
+        .curso-info__boton:hover{
+            background-color: black;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <main class="landing">
+        
+        <div class="banner-aviso">
+            <p class="banner-aviso__texto">
+                We're so glad that our offer of UXDMC for free was so well received. 
+                So many people joined up over the past 2 months and it's been great 
+                to grow the community. 
+                <span class="banner-aviso__subrayado">The Free offer will be ending at the end of the month of April and the CARE code will continue to be good for 80% off any or all modules</span>
+            </p>
+        </div>
+
+        <section class="curso-info">
+            <h1 class="curso-info__titulo">ux design<br>masterclass</h1>
+            
+            <p class="curso-info__descripcion">
+                Learn how to understand people better, design stunning, 
+                research-driven interfaces, and create real business value 
+                from a team that's been doing it for more than 16 years. 
+                This isn't just another design course.
+            </p>
+            
+            <a href="#" class="curso-info__boton">Register Now</a>
+        </section>
+
+    </main>
+</body>
+</html>
