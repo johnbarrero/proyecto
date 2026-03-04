@@ -5,18 +5,17 @@
 }
 
 @font-face {
-    font-family: inter;
-    src: url() ;
+    font-family: 'inter';
+    src: url(../fuentes/Inter/Inter-VariableFont_opsz,wght.ttf);
     font-display: swap;
-
 }
 body{
-    background-color: #e0e0e0;
-    font-family: inter;
+    font-family: 'inter', sans-serif;
 }
 header h1{
     font-size: 2.5rem;
 }
+
 
 header p{
     line-height: 2;
@@ -29,7 +28,7 @@ header p{
     padding: 20px;
 }
 p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .cabecera{
@@ -69,38 +68,46 @@ nav a{
 }
 
 main{
-    padding-inline: 20%;
-    padding-block: 5%;
+    margin: 30px 10%;
+    background-color: #e0e0e0;
+    padding: 30px;
+    border-radius: 15px;
 }
 
 section a{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-block: 10px;
     display: inline-block;
+    padding: 10px;
+}
+
+section a:hover{
+    background-color: black;
+    color: #e0e0e0;
+    border-radius: 10px;
 }
 
 footer{
     background-color: white;
     text-align: center;
     margin-top: 40px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer div{
     margin-inline:30%;
-    border: solid 2px black;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
 }
-footer div a{
-    border:solid 2px black;
 
-}
 
 footer p{
-    font-size: 1rem;
+    font-size: 0.8rem;
+}
+
+footer div a:hover{
 }
