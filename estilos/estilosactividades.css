@@ -64,23 +64,7 @@ header{
 }
 
 
-footer{
-    background-color: white;
-    text-align: center;
-    margin-top: 40px;
-}
 
-footer div{
-    margin-inline:30%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-
-footer p{
-    font-size: 0.8rem;
-}
 
 
 
@@ -95,12 +79,10 @@ footer p{
 
 .actividades__css, .actividades__html{
     border-radius: 15px;
-    padding: 10px;
     background-color: #e0e0e0;
     width: 45%;
     padding: 30px;
     max-width: 500px;
-
 }
 
 .actividades__css a, .actividades__html a{
@@ -111,6 +93,7 @@ footer p{
 .actividades__css ul, .actividades__html ul{
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 .actividades__css li, .actividades__html li{
     list-style: none;
@@ -131,11 +114,30 @@ footer p{
 }
 
 .actividades__css h2, .actividades__html h2{
+    text-transform: uppercase;
     font-size: 1.2rem;
     margin-block: 25px 10px;
     text-align: center;
 }
 
+footer{
+    background-color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer div{
+    margin-inline:30%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 30px;
+}
+
+
+footer p{
+    font-size: 0.8rem;
+}
 
 
 
