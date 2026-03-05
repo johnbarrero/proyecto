@@ -15,7 +15,6 @@ header h1{
     font-size: 2.5rem;
 }
 
-
 header p{
     line-height: 2;
 }
@@ -62,5 +61,60 @@ nav a{
 header{
     text-align: center;
     padding: 20px;
-    border: solid 2px black
 }
+
+
+footer{
+    background-color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer div{
+    margin-inline:30%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+footer p{
+    font-size: 0.8rem;
+}
+
+
+
+.contenedor-columnas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.actividades__css{
+    border:solid 1px black;
+    width: 45%;
+}
+
+.actividades__html{
+    border:solid 1px black;
+    width: 45%;
+
+}
+
+.actividades__css a, .actividades__html a{
+    text-decoration: none;
+    color: black;
+}
+.actividades__css li, .actividades__html li{
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
