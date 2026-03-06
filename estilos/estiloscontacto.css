@@ -77,6 +77,7 @@ nav a{
     margin: 0 auto;
     padding: 20px;
     text-align: left;
+    width: 100%;
 }
 
 
@@ -98,6 +99,7 @@ input, textarea{
     border-radius: 10px;
     font-family: 'inter', sans-serif;
     width: 100%;
+    border: none;
 }
 textarea{
     resize: vertical;
@@ -113,6 +115,7 @@ textarea{
     transition: 0.3s;
     padding: 15px;
     width: 100%;
+    border: none;
 }
 
 .boton-enviar:hover{
