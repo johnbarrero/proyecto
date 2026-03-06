@@ -9,6 +9,10 @@
     font-display: swap;
 }
 
+body{
+    font-family: 'inter', sans-serif;
+}
+
 .cabecera{
     background-color: white;
     display: flex;
@@ -45,6 +49,30 @@ nav a{
     font-size: 1.2rem;
 }
 
+.presentacion{
+    background-color: #e0e0e0;
+    margin: 40px;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.presentacion img{
+    width: 200px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.texto-sobremi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
 
 
 
