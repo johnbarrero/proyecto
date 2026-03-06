@@ -1,0 +1,35 @@
+.cabecera{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.cabecera a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.cabecera-nombre{
+    margin-left: 10%;
+    font-size: 2.5rem;
+}
+
+nav{
+    margin-right: 10%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
