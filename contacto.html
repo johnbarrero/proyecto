@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos/estiloscontacto.css">
 </head>
 <body>
     <div class="cabecera">
@@ -20,7 +21,7 @@
         </nav>
     </div>
 
-    <div class="contenido">
+    <main class="contenido">
         <div>
             <h1>Contacta conmigo</h1>
             <p>Puedes hablar conmigo rellenando este formulario</p>
@@ -29,19 +30,21 @@
             <form action="#" >
                 <div class="input1">
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" required>
+                    <input type="text" id="nombre" name="nombre" required>
                 </div>
                 <div class="input2">
                     <label for="correo">Correo electrónico</label>
-                    <input type="email" id="correo" required>
+                    <input type="email" id="correo" name="correo" required>
                 </div>
                 <div class="input3">
-                    <label for="mensaje">Tu mensaje</label>
-                    <textarea id="mensaje" required></textarea>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
                 </div>
+
+                <button type="submit" class="boton-enviar">Enviar mi mensaje</button>
             </form>
         </div>
-    </div>
+    </main>
  
 
     <footer>
