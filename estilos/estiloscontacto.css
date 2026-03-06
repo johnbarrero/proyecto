@@ -55,6 +55,10 @@ nav a{
     margin-bottom: 40px;
     border: solid 1px black;
     padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contenido h1{
@@ -72,6 +76,24 @@ nav a{
     padding: 30px;
     border-radius: 15px;
     max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+
+
+
+.input-formulario{
+    padding: 5px;
+    border-radius: 10px;
+}
+label{
+    font-size: 1.2rem;
+}
+input, textarea{
+    padding: 10px;
+    border-radius: 10px;
 }
 
 
