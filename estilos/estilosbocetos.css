@@ -13,9 +13,7 @@ body{
     font-family: 'inter', sans-serif;
 }
 
-body{
-    font-family: 'iter', sans-serif;
-}
+
 
 .cabecera{
     background-color: white;
@@ -64,4 +62,41 @@ main h1{
     font-size: 3rem;
     text-align: center;
     margin-bottom: 20px;
+}
+main h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.boceto{
+    text-align: center;
+}
+
+.boceto img{
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    border: solid 2px black;
+}
+
+
+footer{
+    background-color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer div{
+    margin-inline:30%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 30px;
+}
+
+
+footer p{
+    font-size: 0.8rem;
 }
